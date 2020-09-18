@@ -3,29 +3,65 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A947D3AF4B24CCD27CB4D2D /* Pods_ITGroup1000Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76FF08B58DF5A4A3F41206D2 /* Pods_ITGroup1000Test.framework */; };
 		AE36A9B1251482E00041FA4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9B0251482E00041FA4F /* AppDelegate.swift */; };
 		AE36A9B3251482E00041FA4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9B2251482E00041FA4F /* SceneDelegate.swift */; };
-		AE36A9B5251482E00041FA4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9B4251482E00041FA4F /* ViewController.swift */; };
 		AE36A9B8251482E00041FA4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE36A9B6251482E00041FA4F /* Main.storyboard */; };
 		AE36A9BB251482E00041FA4F /* ITGroup1000Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9B9251482E00041FA4F /* ITGroup1000Test.xcdatamodeld */; };
 		AE36A9BD251482E10041FA4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE36A9BC251482E10041FA4F /* Assets.xcassets */; };
 		AE36A9C0251482E10041FA4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE36A9BE251482E10041FA4F /* LaunchScreen.storyboard */; };
+		AE36A9CC251483800041FA4F /* ListMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9CB251483800041FA4F /* ListMoviesViewController.swift */; };
+		AE36A9CF251484020041FA4F /* ListMoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9CE251484020041FA4F /* ListMoviesTableViewCell.swift */; };
+		AE36A9D125149D2C0041FA4F /* NetworkProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9D025149D2C0041FA4F /* NetworkProperties.swift */; };
+		AE36A9D325149D590041FA4F /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9D225149D590041FA4F /* WebService.swift */; };
+		AE36A9D52514A26D0041FA4F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9D42514A26D0041FA4F /* NetworkManager.swift */; };
+		AE36A9D82514A30A0041FA4F /* NetworkManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9D72514A30A0041FA4F /* NetworkManagerDelegate.swift */; };
+		AE36A9DC2514A6E20041FA4F /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9DB2514A6E20041FA4F /* NetworkDataFetcher.swift */; };
+		AE36A9DE2514AA130041FA4F /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9DD2514AA130041FA4F /* MovieModel.swift */; };
+		AE36A9E02514ABD10041FA4F /* ListMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9DF2514ABD10041FA4F /* ListMovieViewModel.swift */; };
+		AE36A9E32514AD870041FA4F /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9E22514AD870041FA4F /* TableViewDataSource.swift */; };
+		AE36A9E52514B5240041FA4F /* SearchRecipeViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9E42514B5240041FA4F /* SearchRecipeViewModelDelegate.swift */; };
+		AE36A9E72514D5440041FA4F /* DetailMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9E62514D5440041FA4F /* DetailMovieModel.swift */; };
+		AE36A9E92514D6230041FA4F /* DetailMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9E82514D6230041FA4F /* DetailMovieViewModel.swift */; };
+		AEA157A525153946005B622A /* DetailMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA157A425153946005B622A /* DetailMovieViewController.swift */; };
+		AEA157A725153A86005B622A /* DetailMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA157A625153A86005B622A /* DetailMovieView.swift */; };
+		AEA157AA25155371005B622A /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA157A925155371005B622A /* RealmService.swift */; };
+		AEA157AC251554CD005B622A /* MovieRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA157AB251554CD005B622A /* MovieRealmModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4060B7A33FEE6E8326BEDD5E /* Pods-ITGroup1000Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITGroup1000Test.release.xcconfig"; path = "Target Support Files/Pods-ITGroup1000Test/Pods-ITGroup1000Test.release.xcconfig"; sourceTree = "<group>"; };
+		76FF08B58DF5A4A3F41206D2 /* Pods_ITGroup1000Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ITGroup1000Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96862AFC468361626AA53F08 /* Pods-ITGroup1000Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITGroup1000Test.debug.xcconfig"; path = "Target Support Files/Pods-ITGroup1000Test/Pods-ITGroup1000Test.debug.xcconfig"; sourceTree = "<group>"; };
 		AE36A9AD251482E00041FA4F /* ITGroup1000Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITGroup1000Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE36A9B0251482E00041FA4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE36A9B2251482E00041FA4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AE36A9B4251482E00041FA4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AE36A9B7251482E00041FA4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE36A9BA251482E00041FA4F /* ITGroup1000Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ITGroup1000Test.xcdatamodel; sourceTree = "<group>"; };
 		AE36A9BC251482E10041FA4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE36A9BF251482E10041FA4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE36A9C1251482E10041FA4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE36A9CB251483800041FA4F /* ListMoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMoviesViewController.swift; sourceTree = "<group>"; };
+		AE36A9CE251484020041FA4F /* ListMoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMoviesTableViewCell.swift; sourceTree = "<group>"; };
+		AE36A9D025149D2C0041FA4F /* NetworkProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProperties.swift; sourceTree = "<group>"; };
+		AE36A9D225149D590041FA4F /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		AE36A9D42514A26D0041FA4F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AE36A9D72514A30A0041FA4F /* NetworkManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerDelegate.swift; sourceTree = "<group>"; };
+		AE36A9DB2514A6E20041FA4F /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		AE36A9DD2514AA130041FA4F /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		AE36A9DF2514ABD10041FA4F /* ListMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovieViewModel.swift; sourceTree = "<group>"; };
+		AE36A9E22514AD870041FA4F /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		AE36A9E42514B5240041FA4F /* SearchRecipeViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeViewModelDelegate.swift; sourceTree = "<group>"; };
+		AE36A9E62514D5440041FA4F /* DetailMovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieModel.swift; sourceTree = "<group>"; };
+		AE36A9E82514D6230041FA4F /* DetailMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieViewModel.swift; sourceTree = "<group>"; };
+		AEA157A425153946005B622A /* DetailMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieViewController.swift; sourceTree = "<group>"; };
+		AEA157A625153A86005B622A /* DetailMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieView.swift; sourceTree = "<group>"; };
+		AEA157A925155371005B622A /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		AEA157AB251554CD005B622A /* MovieRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRealmModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +69,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A947D3AF4B24CCD27CB4D2D /* Pods_ITGroup1000Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		426403B45723DC7DE4FA1501 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96862AFC468361626AA53F08 /* Pods-ITGroup1000Test.debug.xcconfig */,
+				4060B7A33FEE6E8326BEDD5E /* Pods-ITGroup1000Test.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		58A5999E9D08CE6E12EB84FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76FF08B58DF5A4A3F41206D2 /* Pods_ITGroup1000Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AE36A9A4251482E00041FA4F = {
 			isa = PBXGroup;
 			children = (
 				AE36A9AF251482E00041FA4F /* ITGroup1000Test */,
 				AE36A9AE251482E00041FA4F /* Products */,
+				426403B45723DC7DE4FA1501 /* Pods */,
+				58A5999E9D08CE6E12EB84FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +114,15 @@
 		AE36A9AF251482E00041FA4F /* ITGroup1000Test */ = {
 			isa = PBXGroup;
 			children = (
+				AEA157A82515535F005B622A /* RealmService */,
+				AE36A9E12514AD6E0041FA4F /* Extension */,
+				AE36A9D62514A2FE0041FA4F /* Protocols */,
+				AE36A9CA251483370041FA4F /* Service */,
+				AE36A9C92514832E0041FA4F /* Model */,
+				AE36A9C8251483230041FA4F /* View */,
+				AE36A9C7251482EB0041FA4F /* ViewModel */,
 				AE36A9B0251482E00041FA4F /* AppDelegate.swift */,
 				AE36A9B2251482E00041FA4F /* SceneDelegate.swift */,
-				AE36A9B4251482E00041FA4F /* ViewController.swift */,
 				AE36A9B6251482E00041FA4F /* Main.storyboard */,
 				AE36A9BC251482E10041FA4F /* Assets.xcassets */,
 				AE36A9BE251482E10041FA4F /* LaunchScreen.storyboard */,
@@ -70,6 +132,80 @@
 			path = ITGroup1000Test;
 			sourceTree = "<group>";
 		};
+		AE36A9C7251482EB0041FA4F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AE36A9DF2514ABD10041FA4F /* ListMovieViewModel.swift */,
+				AE36A9E82514D6230041FA4F /* DetailMovieViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AE36A9C8251483230041FA4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE36A9CD251483F00041FA4F /* Cells */,
+				AE36A9CB251483800041FA4F /* ListMoviesViewController.swift */,
+				AEA157A425153946005B622A /* DetailMovieViewController.swift */,
+				AEA157A625153A86005B622A /* DetailMovieView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AE36A9C92514832E0041FA4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE36A9DD2514AA130041FA4F /* MovieModel.swift */,
+				AE36A9E62514D5440041FA4F /* DetailMovieModel.swift */,
+				AEA157AB251554CD005B622A /* MovieRealmModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE36A9CA251483370041FA4F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AE36A9D025149D2C0041FA4F /* NetworkProperties.swift */,
+				AE36A9D225149D590041FA4F /* WebService.swift */,
+				AE36A9D42514A26D0041FA4F /* NetworkManager.swift */,
+				AE36A9DB2514A6E20041FA4F /* NetworkDataFetcher.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AE36A9CD251483F00041FA4F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AE36A9CE251484020041FA4F /* ListMoviesTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AE36A9D62514A2FE0041FA4F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AE36A9D72514A30A0041FA4F /* NetworkManagerDelegate.swift */,
+				AE36A9E42514B5240041FA4F /* SearchRecipeViewModelDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AE36A9E12514AD6E0041FA4F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AE36A9E22514AD870041FA4F /* TableViewDataSource.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		AEA157A82515535F005B622A /* RealmService */ = {
+			isa = PBXGroup;
+			children = (
+				AEA157A925155371005B622A /* RealmService.swift */,
+			);
+			path = RealmService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE36A9C4251482E10041FA4F /* Build configuration list for PBXNativeTarget "ITGroup1000Test" */;
 			buildPhases = (
+				F84BD5FE1B9D2D95F2368545 /* [CP] Check Pods Manifest.lock */,
 				AE36A9A9251482E00041FA4F /* Sources */,
 				AE36A9AA251482E00041FA4F /* Frameworks */,
 				AE36A9AB251482E00041FA4F /* Resources */,
+				B2157D383626872A68F61642 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,15 +274,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B2157D383626872A68F61642 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ITGroup1000Test/Pods-ITGroup1000Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ITGroup1000Test/Pods-ITGroup1000Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ITGroup1000Test/Pods-ITGroup1000Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F84BD5FE1B9D2D95F2368545 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ITGroup1000Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AE36A9A9251482E00041FA4F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE36A9B5251482E00041FA4F /* ViewController.swift in Sources */,
+				AE36A9DE2514AA130041FA4F /* MovieModel.swift in Sources */,
 				AE36A9B1251482E00041FA4F /* AppDelegate.swift in Sources */,
+				AEA157AC251554CD005B622A /* MovieRealmModel.swift in Sources */,
+				AE36A9CF251484020041FA4F /* ListMoviesTableViewCell.swift in Sources */,
+				AE36A9D325149D590041FA4F /* WebService.swift in Sources */,
+				AE36A9E92514D6230041FA4F /* DetailMovieViewModel.swift in Sources */,
 				AE36A9B3251482E00041FA4F /* SceneDelegate.swift in Sources */,
+				AEA157A725153A86005B622A /* DetailMovieView.swift in Sources */,
+				AE36A9DC2514A6E20041FA4F /* NetworkDataFetcher.swift in Sources */,
+				AE36A9D52514A26D0041FA4F /* NetworkManager.swift in Sources */,
+				AEA157A525153946005B622A /* DetailMovieViewController.swift in Sources */,
+				AE36A9E52514B5240041FA4F /* SearchRecipeViewModelDelegate.swift in Sources */,
+				AE36A9CC251483800041FA4F /* ListMoviesViewController.swift in Sources */,
+				AE36A9E72514D5440041FA4F /* DetailMovieModel.swift in Sources */,
 				AE36A9BB251482E00041FA4F /* ITGroup1000Test.xcdatamodeld in Sources */,
+				AEA157AA25155371005B622A /* RealmService.swift in Sources */,
+				AE36A9D125149D2C0041FA4F /* NetworkProperties.swift in Sources */,
+				AE36A9E32514AD870041FA4F /* TableViewDataSource.swift in Sources */,
+				AE36A9D82514A30A0041FA4F /* NetworkManagerDelegate.swift in Sources */,
+				AE36A9E02514ABD10041FA4F /* ListMovieViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +482,7 @@
 		};
 		AE36A9C5251482E10041FA4F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96862AFC468361626AA53F08 /* Pods-ITGroup1000Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +501,7 @@
 		};
 		AE36A9C6251482E10041FA4F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4060B7A33FEE6E8326BEDD5E /* Pods-ITGroup1000Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

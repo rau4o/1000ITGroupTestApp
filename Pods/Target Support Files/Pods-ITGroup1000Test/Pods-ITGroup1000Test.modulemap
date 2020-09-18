@@ -1,0 +1,6 @@
+framework module Pods_ITGroup1000Test {
+  umbrella header "Pods-ITGroup1000Test-umbrella.h"
+
+  export *
+  module * { export * }
+}

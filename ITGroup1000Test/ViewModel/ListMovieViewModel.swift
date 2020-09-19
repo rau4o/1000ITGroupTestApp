@@ -24,7 +24,7 @@ class ListMovieViewModel {
     
     // MARK: - Helper function
     
-    func getMovide(at index: Int) -> MovieModel {
+    func getMovieId(at index: Int) -> MovieModel {
         return movieData[index]
     }
     

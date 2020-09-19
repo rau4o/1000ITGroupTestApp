@@ -6,7 +6,7 @@ target 'ITGroup1000Test' do
   use_frameworks!
 
   # Pods for ITGroup1000Test
-#  pod 'RealmSwift'
+  pod 'RealmSwift'
   pod "Moya"
   pod 'Kingfisher'
   pod 'SnapKit', '~> 5.0.0'

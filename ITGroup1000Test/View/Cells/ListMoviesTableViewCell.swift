@@ -10,27 +10,6 @@ import UIKit
 import SnapKit
 import Kingfisher
 
-
-extension UILabel {
-//    public convenience init(text: String = "", font: UIFont, numberOfLines: Int = 0, textAlignment: NSTextAlignment = .left, textColor: UIColor = .black) {
-//        self.init()
-//        self.text = text
-//        self.font = font
-//        self.numberOfLines = numberOfLines
-//        self.textAlignment = textAlignment
-//        self.textColor = textColor
-//    }
-    
-    func addShadowLabel() {
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOpacity = 0.6
-        layer.shadowOffset = CGSize(width: 0.5, height: 0.5)
-        layer.masksToBounds = false
-    }
-}
-
-
-
 class ListMoviesTableViewCell: UITableViewCell {
     
     // MARK: - Properties
@@ -66,9 +45,14 @@ class ListMoviesTableViewCell: UITableViewCell {
         return label
     }()
     
+    lazy var blackView: UIView = {
+        let tintView = UIView()
+        tintView.backgroundColor = UIColor(white: 0, alpha: 0.5)
+        return tintView
+    }()
+    
     lazy var imageMovie: UIImageView = {
         let image = UIImageView()
-        image.alpha = 0.9
         image.layer.cornerRadius = 10
         image.clipsToBounds = true
         return image
@@ -90,6 +74,7 @@ class ListMoviesTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         configureUI()
         rateLabel.layer.cornerRadius = 25
+        backgroundColor = #colorLiteral(red: 0.07843137255, green: 0.1333333333, blue: 0.1843137255, alpha: 1)
     }
     
     required init?(coder: NSCoder) {
@@ -103,8 +88,14 @@ class ListMoviesTableViewCell: UITableViewCell {
             addSubview($0)
         }
         
+        imageMovie.addSubview(blackView)
+        
         imageMovie.snp.makeConstraints { (make) in
             make.edges.equalToSuperview().inset(10)
+        }
+        
+        blackView.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
         }
         
         titleLabel.snp.makeConstraints { (make) in
@@ -140,7 +131,6 @@ class ListMoviesTableViewCell: UITableViewCell {
         if let url = model.poster_path {
             imageMovie.kf.indicatorType = .activity
             imageMovie.kf.setImage(with: URL(string:("http://image.tmdb.org/t/p/original/\(url)")))
-//            imageMovie.hnk_setImageFromURL(url)
         }
     }
     

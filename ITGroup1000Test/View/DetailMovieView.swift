@@ -25,14 +25,14 @@ class DetailMovieView: UIView {
         let label = UILabel()
         label.backgroundColor = .white
         label.textColor = .black
-        label.minimumScaleFactor = 0.8
-        label.numberOfLines = 2
+        label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         label.sizeToFit()
         return label
     }()
     
     lazy var detailDateLabel: UILabel = {
         let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 15, weight: .bold)
         label.textColor = .black
         label.backgroundColor = .white
         return label
@@ -43,6 +43,8 @@ class DetailMovieView: UIView {
         text.isEditable = false
         text.isSelectable = false
         text.font = UIFont.systemFont(ofSize: 20, weight: .light)
+        text.backgroundColor = #colorLiteral(red: 0.07843137255, green: 0.1333333333, blue: 0.1843137255, alpha: 1)
+        text.textColor = .white
         return text
     }()
     
@@ -92,15 +94,13 @@ class DetailMovieView: UIView {
         detailDateLabel.snp.makeConstraints { (make) in
             make.bottom.equalTo(detailMovieImageView.snp.bottom).inset(10)
             make.left.equalTo(detailMovieImageView.snp.left).offset(20)
-            make.width.equalTo(100)
             make.height.equalTo(20)
         }
         
         detailTitleLabel.snp.makeConstraints { (make) in
-            make.bottom.equalTo(detailDateLabel.snp.top).offset(5)
+            make.bottom.equalTo(detailDateLabel.snp.top).inset(-10)
             make.left.equalTo(detailMovieImageView.snp.left).offset(20)
-            make.right.equalTo(detailMovieImageView.snp.right).inset(20)
-            make.height.equalTo(35)
+            make.height.equalTo(30)
         }
 
         detailDescriptionLabel.snp.makeConstraints { (make) in

@@ -24,13 +24,11 @@
 		AE36A9DE2514AA130041FA4F /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9DD2514AA130041FA4F /* MovieModel.swift */; };
 		AE36A9E02514ABD10041FA4F /* ListMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9DF2514ABD10041FA4F /* ListMovieViewModel.swift */; };
 		AE36A9E32514AD870041FA4F /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9E22514AD870041FA4F /* TableViewDataSource.swift */; };
-		AE36A9E52514B5240041FA4F /* SearchRecipeViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9E42514B5240041FA4F /* SearchRecipeViewModelDelegate.swift */; };
 		AE36A9E72514D5440041FA4F /* DetailMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9E62514D5440041FA4F /* DetailMovieModel.swift */; };
 		AE36A9E92514D6230041FA4F /* DetailMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE36A9E82514D6230041FA4F /* DetailMovieViewModel.swift */; };
 		AEA157A525153946005B622A /* DetailMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA157A425153946005B622A /* DetailMovieViewController.swift */; };
 		AEA157A725153A86005B622A /* DetailMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA157A625153A86005B622A /* DetailMovieView.swift */; };
-		AEA157AA25155371005B622A /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA157A925155371005B622A /* RealmService.swift */; };
-		AEA157AC251554CD005B622A /* MovieRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA157AB251554CD005B622A /* MovieRealmModel.swift */; };
+		AEA157AE2515D800005B622A /* UILabel+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA157AD2515D800005B622A /* UILabel+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,13 +53,11 @@
 		AE36A9DD2514AA130041FA4F /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		AE36A9DF2514ABD10041FA4F /* ListMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovieViewModel.swift; sourceTree = "<group>"; };
 		AE36A9E22514AD870041FA4F /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
-		AE36A9E42514B5240041FA4F /* SearchRecipeViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeViewModelDelegate.swift; sourceTree = "<group>"; };
 		AE36A9E62514D5440041FA4F /* DetailMovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieModel.swift; sourceTree = "<group>"; };
 		AE36A9E82514D6230041FA4F /* DetailMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieViewModel.swift; sourceTree = "<group>"; };
 		AEA157A425153946005B622A /* DetailMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieViewController.swift; sourceTree = "<group>"; };
 		AEA157A625153A86005B622A /* DetailMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieView.swift; sourceTree = "<group>"; };
-		AEA157A925155371005B622A /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
-		AEA157AB251554CD005B622A /* MovieRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRealmModel.swift; sourceTree = "<group>"; };
+		AEA157AD2515D800005B622A /* UILabel+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +153,6 @@
 			children = (
 				AE36A9DD2514AA130041FA4F /* MovieModel.swift */,
 				AE36A9E62514D5440041FA4F /* DetailMovieModel.swift */,
-				AEA157AB251554CD005B622A /* MovieRealmModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,7 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				AE36A9D72514A30A0041FA4F /* NetworkManagerDelegate.swift */,
-				AE36A9E42514B5240041FA4F /* SearchRecipeViewModelDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -194,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				AE36A9E22514AD870041FA4F /* TableViewDataSource.swift */,
+				AEA157AD2515D800005B622A /* UILabel+extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -201,7 +196,6 @@
 		AEA157A82515535F005B622A /* RealmService */ = {
 			isa = PBXGroup;
 			children = (
-				AEA157A925155371005B622A /* RealmService.swift */,
 			);
 			path = RealmService;
 			sourceTree = "<group>";
@@ -323,20 +317,18 @@
 			files = (
 				AE36A9DE2514AA130041FA4F /* MovieModel.swift in Sources */,
 				AE36A9B1251482E00041FA4F /* AppDelegate.swift in Sources */,
-				AEA157AC251554CD005B622A /* MovieRealmModel.swift in Sources */,
 				AE36A9CF251484020041FA4F /* ListMoviesTableViewCell.swift in Sources */,
 				AE36A9D325149D590041FA4F /* WebService.swift in Sources */,
 				AE36A9E92514D6230041FA4F /* DetailMovieViewModel.swift in Sources */,
 				AE36A9B3251482E00041FA4F /* SceneDelegate.swift in Sources */,
+				AEA157AE2515D800005B622A /* UILabel+extension.swift in Sources */,
 				AEA157A725153A86005B622A /* DetailMovieView.swift in Sources */,
 				AE36A9DC2514A6E20041FA4F /* NetworkDataFetcher.swift in Sources */,
 				AE36A9D52514A26D0041FA4F /* NetworkManager.swift in Sources */,
 				AEA157A525153946005B622A /* DetailMovieViewController.swift in Sources */,
-				AE36A9E52514B5240041FA4F /* SearchRecipeViewModelDelegate.swift in Sources */,
 				AE36A9CC251483800041FA4F /* ListMoviesViewController.swift in Sources */,
 				AE36A9E72514D5440041FA4F /* DetailMovieModel.swift in Sources */,
 				AE36A9BB251482E00041FA4F /* ITGroup1000Test.xcdatamodeld in Sources */,
-				AEA157AA25155371005B622A /* RealmService.swift in Sources */,
 				AE36A9D125149D2C0041FA4F /* NetworkProperties.swift in Sources */,
 				AE36A9E32514AD870041FA4F /* TableViewDataSource.swift in Sources */,
 				AE36A9D82514A30A0041FA4F /* NetworkManagerDelegate.swift in Sources */,

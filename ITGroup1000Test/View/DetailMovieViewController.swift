@@ -60,6 +60,8 @@ private extension DetailMovieViewController {
     
     func initialSetup() {
         configureUI()
+        view.backgroundColor = #colorLiteral(red: 0.07843137255, green: 0.1333333333, blue: 0.1843137255, alpha: 1)
+        configureNavigationBar()
     }
     
     private func configureUI() {
@@ -68,5 +70,10 @@ private extension DetailMovieViewController {
         detailView.snp.makeConstraints { (make) in
             make.edges.equalTo(view.safeAreaLayoutGuide)
         }
+    }
+    
+    private func configureNavigationBar() {
+        navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.07843137255, green: 0.1333333333, blue: 0.1843137255, alpha: 1)
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
 }

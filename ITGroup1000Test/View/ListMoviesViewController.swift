@@ -29,6 +29,7 @@ class ListMoviesViewController: UIViewController {
         let tableView = UITableView()
         tableView.register(ListMoviesTableViewCell.self, forCellReuseIdentifier: cellId)
         tableView.delegate = self
+        tableView.backgroundColor = #colorLiteral(red: 0.07843137255, green: 0.1333333333, blue: 0.1843137255, alpha: 1)
         return tableView
     }()
     
@@ -73,7 +74,7 @@ private extension ListMoviesViewController {
     func initialSetup() {
         configureUI()
         configureNavigationBar()
-        view.backgroundColor = .white
+        view.backgroundColor = #colorLiteral(red: 0.07843137255, green: 0.1333333333, blue: 0.1843137255, alpha: 1)
     }
     
     private func configureUI() {
@@ -87,6 +88,8 @@ private extension ListMoviesViewController {
     
     private func configureNavigationBar() {
         title = "News"
+        navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.07843137255, green: 0.1333333333, blue: 0.1843137255, alpha: 1)
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
 }
 
@@ -104,31 +107,28 @@ extension ListMoviesViewController: UITableViewDelegate {
         return heightCell
     }
     
-//    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-//        if scrollView.contentOffset.y > scrollView.contentSize.height * 0.95 {
-//            bindUI()
-//        }
-//    }
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if scrollView.contentOffset.y > scrollView.contentSize.height * 0.95 {
+            bindUI()
+        }
+    }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        // calculates where the user is in the y-axis
+        
         let offsetY = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height
         var pagesCount = 0
 
         if offsetY > contentHeight - scrollView.frame.size.height {
 
-            // increments the number of the page to request
             pagesCount += 1
-            // call your API for more data
+            
             viewModel.getMovieData(pages: pagesCount) { [weak self] in
                 guard let self = self else {return}
                 self.tableView.dataSource = self.viewModel.dataSource
                 self.tableView.reloadData()
                 self.refresher.endRefreshing()
             }
-
         }
-        tableView.reloadData()
     }
 }

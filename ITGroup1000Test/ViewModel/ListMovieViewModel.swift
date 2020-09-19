@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RealmSwift
 
 class ListMovieViewModel {
     
@@ -16,7 +17,6 @@ class ListMovieViewModel {
     var dataFetcher = NetworkDataFetcher()
     var dataSource: TableViewDataSource<MovieModel, ListMoviesTableViewCell>?
     weak var delegate: MovieViewModelDelegate?
-    
     
     var numberOfMovies: Int {
         return movieData.count
@@ -30,12 +30,10 @@ class ListMovieViewModel {
     
     func getMovieData(pages: Int, completion: @escaping () -> Void) {
         dataFetcher.fetchMovieData(page: pages) { [weak self] (result) in
-            print("123\(result.page)")
             guard let self = self else {return}
             let movies = result.results
             for i in 0..<movies.count {
                 self.movieData.append(movies[i])
-//                RealmService.shared.create(<#T##object: T##T#>)
             }
             self.didLoadMovie(self.movieData)
             self.delegate?.reloadTableView()
